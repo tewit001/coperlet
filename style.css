@@ -1,0 +1,267 @@
+*{
+    /*การกำหนด font */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* กำหนด link style */
+    text-decoration: none;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    
+}
+
+/*-------menu------------*/
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+ nav{
+     background-color: rgb(0, 0, 0);
+     overflow: hidden;
+ }
+
+.nav-con{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 10px;
+    padding: 14px 16px;
+}
+
+.menu{
+    display: flex;
+    overflow: hidden;
+}
+
+.menu li{
+    float: left;
+    color: rgb(7, 10, 14);
+    list-style: none;
+    margin-left: 25px;
+    padding: 14px 16px;
+}
+
+.menu a:hover{
+    background-color: rgb(146, 141, 150);
+
+
+}
+
+.menu a:active{
+    background-color: rgb(138, 120, 137);
+    text-decoration: none;
+}
+
+a{
+    color: rgb(236, 114, 0);
+}
+
+.logo{
+    font-size: 30px;
+
+}
+
+
+
+/*------------------dropdowm------------------*/
+/*navbar container*/
+.navbar{
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar a{
+    float: left;
+    font-size: 14px;
+    color: rgb(236, 114, 0);
+    text-align: center;
+    padding:14px 16px;
+    text-decoration: none;
+}
+/*dropdown-container*/
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+/*dropdown-btn*/
+.dropdown .dropbtn{
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: rgb(255, 118, 6);
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: rgb(95, 255, 250);
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: mintcream;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/*link insdie dropdown*/
+.dropdown-content a{
+    float: none;
+    color: rgb(14, 20, 20);
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover{
+    background-color: dimgrey;
+}
+
+.dropdown-content .dropdown-content{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+/*-------------table style ---------------*/
+.styled-table{
+    width: 100%;
+    border-collapse: collapse ; /*ทำไมเส้นขอบเขตเชื่อมกัน */
+    }
+
+/* ตกแต่งหัวข้อของตาราง */
+.styled-table th {
+    background-color: aqua; /*สีพื้นหลังของหัวของ */
+    color: black; /*สีของตัวอักษรในหัวข้อ */
+    text-align: left; /* จัดตำแหน่งตัวอักษรให้ซิดซ้าย */
+    padding: 12px 15px;
+    font-size: 16px;
+}
+
+/*ตกแต่งแถวตาราง */
+.styled-table td {
+    text-align: left;
+    padding: 12px 18px;
+    border-bottom: 1px solid color #16bb;
+    font-size: 16px;
+}
+
+/*เปลี่ยนสีเมาร์ */
+.styled-table tr :hover{
+    background-color: rgb(217, 194, 255);
+}
+
+/*เพิ่มเส้นขอบตาราง */
+.styled-table , .styled-table th, .styled-table td{
+    border: 1px solid #546;
+}
+
+
+
+
+/*----------------profile--------------*/
+.title{
+    justify-content: center;
+    padding: 12px;
+    text-align: center;
+}
+
+.pic{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+.pic-item{
+    max-width: 1140px;
+    justify-content: center;
+    text-align: center;
+}
+
+.pic-item img{
+    width: 300px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgb(0, 255, 0);
+    align-items: center;
+    animation-fill-mode: none;
+    transition: 0.5s;
+
+}
+.pic-item p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color:rgb(0, 143, 0)
+}
+
+.top-pic{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    animation-fill-mode: none;
+}
+
+.toph-item{
+    max-width: 1140px;
+    justify-content: center;
+    text-align: center;
+    animation-fill-mode: none;
+}
+
+.toph-info img{
+    width: 300px;
+    border-radius: 100%;
+    box-shadow: 0 4px 8px 0 rgb(128, 255, 44), 0 6px 20px 0 rgb(240, 114, 12);
+    align-items: center;
+    animation-fill-mode: none;
+    transition: 0.5s;
+}
+
+.toph-info img:hover{
+    transform: scale(1.05);
+}
+
+
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border:3px rgb(14, 7, 7);
+    max-width: 1140px;
+    margin: 0 auto;
+    column-gap: 14px ;
+    padding: 14px 14px;
+}
+
+.content-item{
+    border: 2px rgb(255, 133, 62);
+    padding: 12px;
+    background-color: rgb(138, 255, 128);
+    color: black;
+    box-shadow: 0 4px 8px 0;
+}
+
+.content-item2{
+    padding: 12px;
+    background-color: rgb(101, 248, 33);
+    box-shadow: 0 4px 8px 0;
+}
+
+.content-item3{
+    padding: 12px;
+    background-color: rgb(138, 255, 128);
+    box-shadow: 0 4px 8px 0;
+}
+
+.content-item h3{
+
+}
